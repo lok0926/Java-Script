@@ -1,0 +1,54 @@
+// 1장
+<!DOCTYPE html>
+<!-- HTML 5이다를 설명해줌 -->
+<html lang="en">
+<!-- ㄴ 여는 태그, en = 영어로 작성된 문서다라는걸 알려줌 -->
+<head>
+<!-- ㄴ 헤드 안에 meta, meta, title이 포함됨 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엘비스 플레슬리</title>
+    <style>
+        body {
+            background-color: ivory;
+            color: green;
+        }
+        h1 {
+            color: darkred;
+            text-align: center;  
+        }
+        span {
+            color: blue;
+            font-size: 1.5em;
+        }
+        /* 우선순위는 적용되는 요소 수가 더 적을 수록 높음 */
+    </style>
+    <script>
+        function show () {
+            let ele=document.getElementById("img1");
+            // let은 새로운 변수를 선언하게 할 수 있다.
+            ele.src = "C:/Users/user/Documents/elvis.jpg";
+    // 위에 빨간색이 나오는 이유는 \u 때문이다 불편하면 한번 더 \ 적으면 된다.
+        }
+        function hide () {
+            let ele=document.getElementById("img1");
+            ele.src="";
+        }
+    </script>
+</head>
+<body>
+    <h1 onmouseover="hide();" onmouseout="show();">Elvis Presley</h1>
+    <hr>
+    He was a American singer and actor, In November 26,
+    He made his film debut in <span>"LOVE ME TENDER"</span>. He also
+    referred to as <span>"The King of Rock and Roll"</span>.
+    <br>
+    <br>
+    <img id = "img1" , 
+    src="C:/Users/user/Documents/elvis.jpg" , width="300" , alt = "엘비스 프레슬리 이미지">
+<!-- ㄴ 웹페이지 내용이 들어가는 부분 -->
+</body>
+</html>
+<!-- ㄴ 닫는 태그 -->
+
+// 1주차 3wc를 통한 오류 수정, f12 사용, html5에 대하여 설명, 웹이란 무엇인가? 웹과 인터넷의 차이 설명, URL(Uniform Resource Locator) 자원의 위치를 지정해준 주소, 포트 설명
