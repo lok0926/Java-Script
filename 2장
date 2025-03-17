@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=<device-width>, initial"
+    <title>document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            width: 60px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>테이블 만들기</h2>
+    <hr />
+    <table border="1">
+        <tr><td colspan="3">월간계획</td></tr>
+        <tr><td>1</td><td colspan="2">웹프로그래밍</td></tr>
+        <tr><td>2</td><td rowspan="2">C</td><td>Java</td></tr>
+        <tr><td>3</td><td>컴구구</td></tr>
+    </table>
+    <h2>하이퍼 링크</h2>
+    <ul>
+        <li>
+            <a href="https://www.amazon.com" target="_self"> 아마존</a>
+        </li>
+        <li>
+            <a href="https://www.jnu.ac.kr/jnumain.aspx" target="_blank"> 전남대</a>
+        </li>
+    </ul>
+</body>
+</html>
