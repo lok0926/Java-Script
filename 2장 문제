@@ -1,0 +1,97 @@
+<!-- 실습문제 1번 -->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>산길</h2>
+    <hr />
+    온도가 15&deg;이었다. 가지고 간 물의 &half;을 마셨다.
+    한참 올라 가는 도중에 약수터를 가리키는 &#8624; 사인이 보였다.
+    불현듯 양두종 님의 산길이란 시의 곡을 붙인 박태준의 가곡 &#119136;이 생각이 났다.
+
+    <pre>
+    산길을 간다. 말없이
+    호올로 산길을 간다.
+
+    해는 져서 새소리 그치고
+    짐승의 발자취 그윽히 들리는
+
+    산길을 간다 말없이
+    밤에 홀로 산길을 간다.
+</pre>
+    &copy; 저작권 황기태 &phone; 010-111-2222
+</body>
+</html>
+
+<!-- 실습문제 3번 -->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>나의 셀카</title>
+</head>
+<body>
+    <h2>나의 셀카</h2>
+    <hr />
+    <table>
+        <tr>
+            <td> <img src="징징이 사진" /> </td>
+            <td> <img src="징징이 사진" /> </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- 실습문제 5번 -->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>하이퍼링크</title>
+</head>
+<body>
+    <h2>웹 프로그래밍에 대한 사이트</h2>
+    <hr />
+    <ul>
+        <li>
+            <a href="http://www.w3c.org./wiki/CSS/Properties/color/keywords" target="_blank">
+                CSS 색깔 이름과 값
+            </a>
+        </li>
+        <li>
+            <a href="http://html5.validator.nu/" target="_blank">
+                HTML5 태그 검사 사이트
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
+
+<!-- 실습문제 6번 -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>애국가</title>
+</head>
+<body>
+    <h2>애국가</h2>
+    <hr />
+    <p>
+        동해물과 백두산이 마르고 닳도록 하나님이
+        보우하사 우리나라 만세 무궁화 삼천리 화려강산
+        대한사람 대한으로 길이 보전하세.
+    </p>
+    <audio controls autoplay>
+        <source src="애국가 담긴 mp3 경로" type="audio.mp3" />
+    </audio>
+</body>
+</html>
