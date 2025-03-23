@@ -1,3 +1,85 @@
+<!-- Open Challenge -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컴퓨터 기술 소개</title>
+    <style>
+        body {
+            background-color: ivory;
+            font-size: 18px;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        li {
+            font-size: 18px;
+        }
+        #mytable {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CPU</h1>
+    <hr>
+    <h3>목차</h3>
+    <ol type = "a">
+        <li><a href="#cpu">CPU란?</a></li>
+        <li><a href="#Dp">발전과정</a></li>
+        <li><a href="#dP">주 개발업체</a></li>
+        <li><a href="#compare">비교 이미지</a></li>
+    </ol>
+    <br>
+    <a href="https://ko.wikipedia.org/wiki/CPU_%EC%86%8C%EC%BC%93"> <h3 id ="cpu">CPU란?</h3></a>
+    <p>
+        주기억장치(CPU)는 컴퓨터에서 데이터를 처리하고 임시로 저장하는 메모리다.
+        대표적인 예로 RAM(Random Access Memory)과 캐시 메모리가 있으며, 
+        CPU와 밀접하게 연결되어 빠른 데이터 접근을 제공한다. 
+        주기억장치는 휘발성 메모리로, 전원이 꺼지면 저장된 데이터가 사라진다.
+    </p>
+    <br>
+    <h3 id = "Dp">발전과정</h3>
+    <dl>
+        <dt>1940~1950년대</dt>
+        <dd>진공관을 통한 데이터 처리 방식 사용</dd>
+        
+        <dt>1950~1960년대</dt>
+        <dd>트랜지스터의 등장으로 컴퓨터의 크기가 줄어들고 성능이 개선됨 이후 IBM이 등장하게 됨</dd>
+
+        <dt>1970 ~ 1990년대</dt>
+        <dd>집적 회로 기술이 등장하면서 CPU에 많은 수의 트랜지스터를 작은 칩에 통합이되고 intel이 등장하면서 소형화가 가능해짐</dd>
+        
+        <dt>1990 ~ 2000년대</dt>
+        <dd>인텔과 AMD는 고속 CPU를 개발하여 개인용 컴퓨터 시장을 점유하며 초고속 처리와 다양한 명령어 처리에 중점을 두고 발전이 진행됨.</dd>
+        
+        <dt>2010 ~ 2020년대</dt>
+        <dd> 모바일 기기와 초소형 컴퓨터의 수요가 급증하면서 저전력 CPU 개발에 집중하게 됨</dd>
+    </dl>
+
+    <table border="2" id = "mytable">
+        <caption><h3 id = "dp">주 개발업체</h3></caption>
+        <thead>
+            <tr><th>/</th><th><a href = "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%85%94">intel</a></th><th><a href = https://ko.wikipedia.org/wiki/AMD>AMD</a></th></tr>
+        </thead>
+        <tbody>
+            <tr><th>대표 CPU</th><td>Core 시리즈</td><td>Ryzen 시리즈</td></tr>
+            <tr><th>시장 점유율</th><td>약 70%</td><td>약 30%</td></tr>
+            <tr><th>현상태</th><td>개발부진</td><td>수요급증</td></tr>
+        </tbody>
+    </table>
+    <br>
+    <h3 id = "compare">비교 이미지</h3>
+    <img src = "cpu.png" alt = "cpu 비교">
+    <audio autoplay loop>
+        <source src = "신세계교향곡.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
+
 <!-- 실습문제 1번 -->
 <!DOCTYPE html>
 
@@ -27,6 +109,50 @@
 </body>
 </html>
 
+<!-- 실습문제 2번(1) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=;, initial-scale=1.0">
+    <title>도시소개</title>
+</head>
+<body>
+    <h2>도시 소개</h2>
+    <hr>
+    <dl>
+        <dt>California</dt>
+        <dd>맑고 화창한 날씨가 좋고 태평양의 아름다운 해변을 가진 멋진 주</dd>
+        <dt>Florida</dt>
+        <dd>미국의 동남부에 위치한 주로서 많은 휴양 도시가 있고 미국의 최남단이 연결된 아름다운 주</dd>
+        <dt>Texas</dt>
+        <dd>드넓은 목장들이 있어 텍사스 바베큐로 유명하고 석유가 생산되는 주</dd>
+    </dl>
+</body>
+</html>
+
+<!-- 실습문제 2번(2) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>살빼는 방법</title>
+</head>
+<body>
+    <h2>살빼는 방법</h2>
+    <hr>
+    <ul>
+        <li>고기를 많이 먹는 고기 다이어트</li>
+        <li>채소를 많이 먹는 채소 다이어트</li>
+        <li>적게 먹고 운동하는 운동 다이어트</li>
+    </ul>
+    
+</body>
+</html>
+
 <!-- 실습문제 3번 -->
 <!DOCTYPE html>
 
@@ -43,6 +169,66 @@
             <td> <img src="징징이 사진" /> </td>
             <td> <img src="징징이 사진" /> </td>
         </tr>
+    </table>
+</body>
+</html>
+
+<!-- 실습문제 4번(1) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>신체 검사</h2>
+    <hr>
+    <table border="1">
+        <caption>학생 신체 검사 표</caption>
+        <thead>
+            <tr><th>이름</th><th>키</th><th>체중</th><th>시력</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>황기태</td><td>179</td><td>67</td><td>1.0</td></tr>
+            <tr><td>이재문</td><td>177</td><td>77</td><td>2.0</td></tr>
+            <tr><td>정인화</td><td>189</td><td>87</td><td>1.2</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><th>평균</th><th>181</th><th>77</th><th>1.3</th></tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+<!-- 실습문제 4번(2) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과일 수입</title>
+</head>
+<body>
+    <h2>과일 수입</h2>
+    <hr>
+    <table border="1">
+        <caption>과일 수입 표</caption>
+        <thead>
+            <tr><th>사과</th><th>바나나</th><th>망고</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="사과.png" alt="사과"></td>
+                <td><img src="바나나.png" alt="바나나"></td>
+                <td><img src="망고.png" alt="망고"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><th>페루</th><th>필리핀</th><th>호주</th></tr>
+        </tfoot>
     </table>
 </body>
 </html>
@@ -74,7 +260,6 @@
 </html>
 
 <!-- 실습문제 6번 -->
-
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
