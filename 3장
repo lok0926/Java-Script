@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가짜 네이버</title>
+</head>
+<body>
+    <h3>네이버 검색 결과를 출력합니다.</h3>
+    <hr>
+    <form action="https://search.naver.com/search.naver" method="get" target="result">
+        <datalist id = "searchlist">
+            <option>기린</option>
+            <option>타이거즈</option>
+            <option>트윈스</option>
+        </datalist>
+        <label>
+            검색어 입력 : <input type="text" name="query">
+        </label>
+        <br>
+        전화 <input type = "tel">
+        <input type="submit" value = "검색">
+    </form>
+    <hr>
+    <iframe name="result" src = "http://www.jnu.ac.kr" width="500" height="500"></iframe>
+</body>
+</html>
