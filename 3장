@@ -25,3 +25,5 @@
     <iframe name="result" src = "http://www.jnu.ac.kr" width="500" height="500"></iframe>
 </body>
 </html>
+
+// display = flex, grid(2차원, 2장 2번문제 설명 중 table을 사용안하고 grid를 사용하면 편하다.
