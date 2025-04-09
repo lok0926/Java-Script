@@ -1,0 +1,238 @@
+// 1번(1)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            border-width: 1px;
+            border-color: green;
+            border-style: solid;
+            float: left;
+            margin-right: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>3개의 div 활용</h2>
+    <hr>  
+    <div>캔버스에 이미지를 그리기 위해서는 이미지를 담을 객체가 먼저 필요하다.</div>
+    <div>image 객체의 src 프로퍼티를 이용하여 비트맵을 로드한다.</div>
+    <div>이미지 로딩이 끝나면 그때 비로소 이미지의 너비와 높이가 제대로 알려진다.</div>
+</body>
+</html>
+// float 설명하심. float은 부동소수점이라 부르는데 소수점이 자유롭게 떠서 이동한다는 느낌으로 설명하심, bootstrap, greed, counter 등 공부  
+
+// 1번(2)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline;
+            width: 200px;
+            border-width: 1px;
+            border-color: green;
+            border-style: solid;
+            margin-right: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>3개의 div 활용</h2>
+    <hr>  
+    <div>캔버스에 이미지를 그리기 위해서는 이미지를 담을 객체가 먼저 필요하다.</div>
+    <div>image 객체의 src 프로퍼티를 이용하여 비트맵을 로드한다.</div>
+    <div>이미지 로딩이 끝나면 그때 비로소 이미지의 너비와 높이가 제대로 알려진다.</div>
+</body>
+</html>
+
+// 3번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Play List</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            counter-reset: rownumber;
+        }
+        /*tr > td:nth-child(1) {
+            border: 1px solid green;
+            width: 1.3em;
+            text-align: center;
+        }
+        tr > td:nth-child(2){
+            width:15em;
+            padding-left: 10px;
+        } */
+        button:hover {
+            color:pink;
+        }
+        tr {
+            counter-increment: rownumber;
+            border-bottom: 1px solid;
+        }
+        tr:before {
+            display: inline-block;
+            content: counter(rownumber) ".";
+            border: 1px solid green;
+            width: 1.3em;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>오디오 재생 리스트</h2>
+    <hr>
+    <table>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>애국가</td>
+            <td><button type="button">재생</button></td>
+            <td><button type="button">중지</button></td>
+        </tr>
+        <tr>
+            <!-- <td>2</td> -->
+            <td>Moon Glow</td>
+            <td><button type="button">재생</button></td>
+            <td><button type="button">중지</button></td>
+        </tr>
+        <tr>
+            <!-- <td>3</td> -->
+            <td>Embraceable you</td>
+            <td><button type="button">재생</button></td>
+            <td><button type="button">중지</button></td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+// 5번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 배치</title>
+    <style>
+        img {
+            position: absolute;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid green;
+        }
+        p {
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>스폰지밥</h2>
+    <hr>
+    <div>
+        <img src="스펀지밥.png" width="150">
+        <p>
+            저는 스폰지밥입니다. 먹는 밥이 아니고요 제 이름이 그냥 그래요. 그리고 어린이로부터 노인까지 많은 분들의 사랑을 받고 있어요.
+            제 친구 뚱이도 있고요, 징징이도 있고 집게 사장님도 있어요
+        </p>
+    </div>
+</body>
+</html>
+// float left 사용해도됨 포지션 지우고
+
+// 7번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        img {
+            transition: width 2s;
+        }
+        img:hover {
+            width:100%;
+            /* transform: scaleX(3.0); */
+        }
+    </style>
+</head>
+<body>
+    <h2>마우스를 올려봐요</h2>
+    <hr>
+    <img src="스펀지밥.png" width="100" height="150">
+</body>
+</html>
+
+// 9번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카푸치노 만드는 순서</title>
+    <style>
+        div {
+            border: 1px solid darkred;
+        }
+        div h3{
+            text-align: center;
+        }
+        ol {
+            list-style-type: none;
+        }
+        li>span {
+            position: absolute;
+            font-size: 2em;
+            font-style: italic;
+            color: green;
+            font-weight: bold;
+
+        }
+        li>p {
+            margin-left: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <h2>카푸치노</h2>
+    <hr>
+    <div>
+        <h3>카푸치노 만드는 순서</h3>
+        <ol>
+            <li>
+                <span>1.</span>
+                <p>
+                    에소프레소를 추출한다. 반드시 에소프레소 콩을 사용해야 제맛이 난다.
+                </p>
+            </li>
+            <li>
+                <span>2.</span>
+                <p>
+                    적당한 용기에 우유를 넣어 중탕을 하거나 끓기 직전까지 데운다.
+                </p>
+            </li>
+            <li>
+                <span>3.</span>
+                <p>몇초간 저어 충분히 거품을 낸다. 거품이 충분하지 않으면 풍미가 떨어진다.</p>
+            </li>
+            <li>
+                <span>4.</span>
+                <p>컵에 계피 막대를 꽃고 커피를 부은후 우유 거품을 붓는다. 휘핑크림을 얹고 계피가루를 뿌린다.</p>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
+// counter 사용해서 변환 가능한지 물어보심
