@@ -1,0 +1,16 @@
+ for(varsize=10; size<=35; size+=5) { // 5씩증가
+document.write("<span ");
+ document.write("style='font-size:" + size + "px'>");
+ document.write(size + "px");
+ document.write("</span>");
+ }
+->
+for (var size = 10; size <= 35; size += 5) { // 5씩 증가
+  document.write("<span style='font-size:" + size + "px'>" + size + "px</span> ");
+}
+-> 템플릿 리터컬 활용
+for (let size = 10; size <= 35; size += 5) {
+  document.write(`<span style="font-size: ${size}px">${size}px</span> `);
+}
+
+"635" > 81로 변형해보심 -> 문자열을 자동형변환하여 635로 바꿈 -> "ㅅㅅ"같은 문자열은 Nan으로 출력되기에 비교x
