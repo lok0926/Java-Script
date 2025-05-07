@@ -5,3 +5,62 @@
 // ===은 type이랑 값도 비교 -> 12 == "12"는 true, 하지만 12 === "12"는 false
 // prototype에 대하여 설명, 객체에는 직접 가진 변수/메서드가 있고, 없으면 **프로토타입(부모 객체)**에서 찾고, 또 없으면 **그 위의 프로토타입(조상)**으로 계속 올라갑니다. 끝에는 null이 있으므로, 거기서 멈춥니다.(chat gpt..)
 // 객체에 constructor(생성자)는 objact이고 함수에 생성자는 Function()이다. 어떤 객체에 prototype 객체는 다른 객체라고 생각하심
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로토 타입</title>
+</head>
+<body>
+    <script>
+        // function Account (owner, code, balance) {
+        //     this.owner=owner;
+        //     this.code=code;
+        //     this.balance=balance;
+        //     this.deposit = function (amount) {
+        //         this.balance += amount;
+        //     }
+        //     this.withdraw=function(amount) {
+        //         this.balance -= amount;
+        //     }
+        //     this.inquery=function(amount) {
+        //         return this.balance;
+        //     }
+        // }
+
+        class Account {
+            constructor(owner, code, balance) {
+                this.owner=owner;
+                this.code=code;
+                this.balance=balance;
+            }
+            deposit = function (amount) {
+               this.balance += amount;
+            }
+            withdraw=function(amount) {
+                this.balance -= amount;
+            }
+            inquery=function(amount) {
+              return this.balance;
+            }
+
+        }
+        let acc1 = new Account("kim", "111", 3000)
+        let acc2 = new Account("lee", "222", 5000)
+        let acc3 = new Account("park", "555", 10000)
+        class VipAccount extends Account {
+            constructor(owner, code, balance, passward) {
+                super(owner, code, balance);
+                this.passward=passward;
+            }
+            getPW() {
+                return this.passward;
+            }
+        }
+        let acc4 = new VipAccount("부자", "999", 1000000, "123")
+    </script>
+    
+</body>
+</html>
