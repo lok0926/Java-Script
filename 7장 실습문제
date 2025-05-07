@@ -1,0 +1,48 @@
+// 1번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습 7-1</title>
+</head>
+<body>
+    <h3>난수 10개 생성</h3>
+    <hr>
+    <script>
+        
+        let n=[];
+        
+        for ( let i = 0; i < 10; i++ ) {
+            let rnd = Math.floor(Math.random() * 100); // 0 ~ 99의 무작위 정수 부여
+            n[i] = rnd;          
+        }
+        
+        for (let i = 0; i < 10; i++) {
+            document.write(n[i] + "&nbsp &nbsp &nbsp");
+        }
+        
+        document.write("<hr>");
+
+        // let big = n[0];
+        // for (let i = 0; i < 10; i++) {
+        //     if (n[i] > big) {
+        //         big = n[i];
+        //     }
+        // }
+        
+        // document.write("제일 큰 수는 ", + big);
+        document.write("제일 큰 수는 ", n.reduce((a, b) => a>b?a:b, n[0]))  // reduce는 배열을 하나의 셀로 바꾸는 함수 reduce(function, int값)으로 사용 int값 = n[0]을 함수에 넣으면서 시작 
+        document.write("<hr>");
+        
+        // n.sort();  정렬을 문자열 크기 기준으로 함
+        // n.sort(function comFunction(a, b) {return a-b});  // a와 b를 비교해 양수면 a를 앞에 0이면 그대로 음수면 뒤로 출력, return a - b를 사용하므로 문자열을 정수로 바꿈
+        n.sort((a, b) => a-b);  // 에로우 함수 사용( = > )
+        document.write(n.join("&nbsp &nbsp &nbsp"))
+        // for (let i = 0; i < 10; i++) {
+        //     document.write(n[i] + "&nbsp &nbsp &nbsp");
+        // }
+    
+    </script>
+</body>
+</html>
