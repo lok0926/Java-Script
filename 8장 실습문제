@@ -1,0 +1,135 @@
+// 2번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트란?</title>
+    <script>
+        function makeBorder() {
+            let sp = document.querySelector('#mySpan');
+            // sp.style.borderWidth="12px";
+            // sp.style.borderColor="violet";
+            // sp.style.borderStyle="dotted";
+            sp.style.border="6px dotted violet";
+        }
+        function showPCount() {
+            let ps = document.querySelectorAll('p');
+            alert(`<p> 태그의 갯수는 ${ps.length}`);
+        }
+    </script>
+</head>
+<body>
+    <h2>
+        자바스크립트란?
+        <button onclick="makeBorder();">border</button>
+        <button onclick="showPCount();">p</button>
+    </h2>
+    <hr>
+    <p>자바스크립트는 웹 프로그래밍 언어로서 웹 페이지를 동적 변경시킬 수 있다.</p>
+    <p><span id="mySpan">C 언어</span>를 아는 사용자는 빠르게 학습할 수 있다.</p>
+    <P>이벤트 등 GUI 프로그래밍에 필요한 요소들이 있어 학습에 약간의 어려움이 있다. </P>
+</body>
+</html>
+
+// 4번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산해봅시다</title>
+</head>
+<body>
+    <h2>계산해봅시다</h2>
+    <hr>
+    <p>2 + 4 = <span onclick="this.innerHTML=eval(2+4)">답</span></p>
+    <p>4 * 20 + 64 = <span onclick="this.innerHTML=eval(4*20+64)">답</span></p>
+    <p>20 / 5 - 8 * 2 = <span onclick="this.innerHTML=20/5-8*2">답</span></p>
+</body>
+</html>
+
+// 6번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeContent(Node) {
+            let newContent = prompt("HTML 텍스트 혹은 그냥 텍스트 입력");
+            // let p = document.querySelector('p');
+            Node.innerHTML=newContent;
+        }
+    </script>
+</head>
+<body>
+    <h2>innerHTML</h2>
+    <hr>
+    <p onclick="changeContent(this);">
+        이번 여름에는 어디로 갈까요?
+    </p>
+</body>
+</html>
+
+// 8번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let curScale=1;
+        function enlarge(node) {
+            curScale += 1;
+            node.style.transform = `scaleX(${curScale})`;
+        }
+    </script>
+</head>
+<body>
+    <h2>클릭하면 2, 3, 4배 옆으로 늘어납니다.</h2>
+    <hr>
+    <img src="별내PT3.png" onclick="enlarge(this);" width="150" alt="sponge">
+</body>
+</html>
+
+// 10번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addAnswer(node, ans) {
+            let newNode=document.createElement('p');
+            newNode.innerHTML=ans;
+            let nextNode = node.nextElementSibling;
+            // if (nextNode) {
+            //     node.parentElement.insertBefore(newNode, nextNode);
+            // }
+            // else {
+            //     node.parentElement.appendChild(newNode);
+            // }
+            node.parentElement.intsertBofore(newNode, node.nextElementSibling);  // 기준노드가 널이면 newNode를 뒤에 추가
+        }
+    </script>
+</head>
+<body>
+    <h2>정답의 동적 삽입</h2>
+    <hr>
+    <div>
+        <p>
+            Q. 거울아 거울아 누가 제일 예쁘니?
+        </p>
+        <button onclick="addAnswer(this, '백설공주');">답보기</button>
+        <p>
+            Q. 죽느냐 사느냐 어떤 것이 문제인가?
+        </p>
+        <button onclick="addAnswer(this, '둘다');">답보기</button>
+
+    </div>
+</body>
+</html>
