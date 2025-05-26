@@ -1,0 +1,100 @@
+// 2번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+</head>
+<body>
+    <h2>라디오 버튼을 클릭하면 이미지를 출력합니다.</h2>
+    <hr>
+    <form>
+        <label><input type="radio" checked name="fruits" value="바나나 사진 주소" onclick="chImage(this)">바나나</label>
+        <label><input type="radio" name="fruits" value="딸기 사진 주소" onclick="chImage(this)">딸기</label>
+        <label><input type="radio" name="fruits" value="사과 사진 주소" onclick="chImage(this)">사과</label>
+    </form>
+    <img src="" width="200" alt="바나나">
+    <script>
+        function chImage(node){
+            let img = document.querySelector('img');
+            img.src = node.value;
+        }
+    </script>
+</body>
+</html>
+
+// 4번
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 커서</title>
+    <style>
+        div {
+            position: absolute;
+        }
+    </style>
+    <script>
+        let imgDiv;
+        window.onload=function(){
+            imgDiv=document.querySelector('img')
+            imgDiv.style.position="absolute"
+        }
+
+        window.onmousemove=function(evt){
+            imgDiv.style.top=evt.clientY+"px";
+            imgDiv.style.left=evt.clientX+"px";
+        }
+    </script>
+</head>
+<body>
+    <h2>이미지 커서 만들기</h2>
+    <hr>
+    <p>
+        마우스를 움직이면 이미지로 만든 커서가
+        마우스를 따라 다닙니다.
+    </p>
+    <div>
+        <img src="스폰지밥.png" width="50px">
+    </div>
+</body>
+</html>
+
+// 6번
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 확대/축소</title>
+</head>
+<body>
+    <h2>마우스 휠을 이용한 이미지 확대/축소</h2>
+    <hr>
+    <p>
+        이미지 위에 휠을 위로 굴리면 이미지가 확대되고, 아래로 굴리면 축소됩니다.
+    </p>
+    <img src="피안화.png" width="200">
+    <script>
+        let img = document.querySelector('img');
+        let imgWidth = img.width;
+
+        img.addEventListener('wheel', function(evt) {
+            evt.preventDefault();
+
+            if (evt.deltaY < 0) {
+                imgWidth *= 1.05;
+
+            } else if (evt.deltaY > 0) {
+                imgWidth *= 0.95;
+            }
+
+            img.style.width = imgWidth + "px";  // 시험에 나올 수 있음 css에서 단위사용은 필수
+        });
+    </script>
+</body>
+</html>
+
+//8번
